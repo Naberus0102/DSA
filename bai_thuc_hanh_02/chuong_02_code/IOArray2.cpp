@@ -4,7 +4,7 @@
 void nhap(int **a, int m, int n) {
 	for(int i = 0; i < m; i++) {
 		for(int j = 0; j < n; j++) {
-			scanf("%d", *(*(a+i)+j));
+			scanf("%d", (*(a + i) + j));
 		}
 	}
 }
@@ -12,7 +12,7 @@ void nhap(int **a, int m, int n) {
 void xuat(int **a, int m, int n) {
 	for(int i = 0; i < m; i++) {
 		for(int j = 0; j < n; j++) {
-			printf("%d ", *(*(a+i)+j));
+			printf("%d ", a[i][j]);
 		}
 		printf("\n");
 	}
